@@ -101,11 +101,11 @@
                     <navigationItem key="navigationItem" id="fZl-0s-R6b">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="JEb-1N-wOZ">
-                            <rect key="frame" x="57.5" y="5.5" width="485.5" height="33"/>
+                            <rect key="frame" x="233.5" y="5.5" width="133.5" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyMovies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-7C-aD4">
-                                    <rect key="frame" x="177" y="4" width="130" height="29"/>
+                                    <rect key="frame" x="1" y="4" width="130" height="29"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -205,7 +205,7 @@
                                     <constraint firstAttribute="height" constant="35" id="WNJ-zy-zck"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Why did you like this movie?" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-V2-Pcc">
                                 <rect key="frame" x="20" y="129" width="560" height="35"/>
@@ -254,11 +254,11 @@
                     <navigationItem key="navigationItem" id="nkB-7s-e6z">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="zpY-HM-Q44">
-                            <rect key="frame" x="180" y="5.5" width="240" height="33"/>
+                            <rect key="frame" x="236" y="5.5" width="128" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Add Movie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELG-FM-Lbx">
-                                    <rect key="frame" x="55" y="3" width="130" height="30"/>
+                                    <rect key="frame" x="-3" y="3" width="130" height="30"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -297,23 +297,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigstock-San-Diego-at-night-7216098" translatesAutoresizingMaskIntoConstraints="NO" id="Ry2-eO-JA6">
-                                <rect key="frame" x="175" y="72" width="250" height="250"/>
+                                <rect key="frame" x="200" y="72" width="200" height="200"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="Arp-o2-pZa"/>
                                     <constraint firstAttribute="height" constant="280" id="T9b-mh-mqZ"/>
                                     <constraint firstAttribute="width" constant="250" id="Tf8-kf-SiS"/>
                                     <constraint firstAttribute="height" constant="250" id="b05-dW-C2Z"/>
+                                    <constraint firstAttribute="height" constant="200" id="fox-pj-e4g"/>
+                                    <constraint firstAttribute="width" constant="200" id="gD0-ho-bwF"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Arp-o2-pZa"/>
                                         <exclude reference="T9b-mh-mqZ"/>
+                                        <exclude reference="Tf8-kf-SiS"/>
+                                        <exclude reference="b05-dW-C2Z"/>
                                     </mask>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the plot to the movie." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0C-AO-b8D">
-                                <rect key="frame" x="20" y="400" width="560" height="87"/>
+                                <rect key="frame" x="20" y="350" width="560" height="87"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="FDy-ZO-DzR"/>
@@ -330,23 +334,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMz-h3-e2a">
-                                <rect key="frame" x="160" y="330" width="280" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="dA2-Sj-oA5"/>
-                                    <constraint firstAttribute="height" constant="30" id="i9Z-DP-Jjb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="imdblink.com">
-                                    <color key="titleColor" red="0.99607843139999996" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="imdbLinkPressed:" destination="xVx-mK-T7S" eventType="touchUpInside" id="lF1-Yg-2Xg"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tm-Pm-3RT">
-                                <rect key="frame" x="20" y="368" width="560" height="24"/>
+                                <rect key="frame" x="20" y="318" width="560" height="24"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="560" id="Mgw-BP-nU6"/>
@@ -364,7 +353,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason I Liked It" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9h-c7-VUo">
-                                <rect key="frame" x="20" y="495" width="560" height="24"/>
+                                <rect key="frame" x="20" y="445" width="560" height="24"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="KtM-8W-JuL"/>
@@ -380,7 +369,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the reason I liked this movie." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VY-uv-ui3">
-                                <rect key="frame" x="20" y="527" width="560" height="65"/>
+                                <rect key="frame" x="20" y="477" width="560" height="65"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="4la-Yq-zCs"/>
@@ -397,6 +386,21 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMz-h3-e2a">
+                                <rect key="frame" x="160" y="280" width="280" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="dA2-Sj-oA5"/>
+                                    <constraint firstAttribute="height" constant="30" id="i9Z-DP-Jjb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="imdblink.com">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="imdbLinkPressed:" destination="xVx-mK-T7S" eventType="touchUpInside" id="lF1-Yg-2Xg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -452,11 +456,11 @@
                     <navigationItem key="navigationItem" id="54c-31-djH">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="oSE-vn-UHG">
-                            <rect key="frame" x="180" y="5.5" width="240" height="33"/>
+                            <rect key="frame" x="269" y="5.5" width="62" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUZ-zc-BHu">
-                                    <rect key="frame" x="55" y="1.5" width="130" height="30"/>
+                                    <rect key="frame" x="-33" y="1.5" width="130" height="30"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -519,11 +523,11 @@
                     <navigationItem key="navigationItem" id="t4e-QY-1A5">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="pkD-55-Qr4">
-                            <rect key="frame" x="180" y="5.5" width="240" height="33"/>
+                            <rect key="frame" x="237" y="5.5" width="126" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MyMovies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POI-sc-Jjj">
-                                    <rect key="frame" x="55" y="2.5" width="130" height="29"/>
+                                    <rect key="frame" x="-3" y="2.5" width="130" height="29"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="27"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

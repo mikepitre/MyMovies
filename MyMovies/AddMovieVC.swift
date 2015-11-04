@@ -28,6 +28,11 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        
+        titleLbl.delegate = self
+        reasonLbl.delegate = self
+        plotLbl.delegate = self
+        imdbLbl.delegate = self
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
