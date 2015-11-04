@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +17,31 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night-milky-way-stars" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-hV-kDv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyMovies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v6-EP-M7i">
+                                <rect key="frame" x="20" y="74" width="560" height="125"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.44705882349999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5v6-EP-M7i" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="2an-Gx-raC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="gbV-hV-kDv" secondAttribute="bottom" id="9tD-JX-5wb"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5v6-EP-M7i" secondAttribute="bottom" constant="401" id="IB8-0p-O9g"/>
+                            <constraint firstItem="gbV-hV-kDv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="bL5-i0-UXz"/>
+                            <constraint firstItem="gbV-hV-kDv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="iF8-5Q-r1f"/>
+                            <constraint firstAttribute="trailing" secondItem="gbV-hV-kDv" secondAttribute="trailing" id="nFo-fq-7Gw"/>
+                            <constraint firstItem="5v6-EP-M7i" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="54" id="pMv-dQ-g0Q"/>
+                            <constraint firstItem="5v6-EP-M7i" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="y2D-Rj-aa5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="night-milky-way-stars" width="3000" height="4500"/>
+    </resources>
 </document>
