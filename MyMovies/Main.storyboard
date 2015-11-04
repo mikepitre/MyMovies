@@ -492,7 +492,7 @@
         <!--Imdb WebVC-->
         <scene sceneID="DQE-pj-ha2">
             <objects>
-                <viewController id="0Lt-hN-cuQ" customClass="ImdbWebVC" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="0Lt-hN-cuQ" customClass="ImdbWebVC" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U1X-a2-Anw"/>
                         <viewControllerLayoutGuide type="bottom" id="Esu-s2-8M4"/>
