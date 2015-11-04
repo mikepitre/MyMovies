@@ -13,6 +13,10 @@
 		8FC2CFC81BEA5BB300C380AA /* MyMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFC61BEA5BB300C380AA /* MyMovies.xcdatamodeld */; };
 		8FC2CFCA1BEA5BB300C380AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2CFC91BEA5BB300C380AA /* Assets.xcassets */; };
 		8FC2CFCD1BEA5BB300C380AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2CFCB1BEA5BB300C380AA /* LaunchScreen.storyboard */; };
+		8FC2CFD51BEA609700C380AA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFD41BEA609700C380AA /* MovieCell.swift */; };
+		8FC2CFDC1BEA627100C380AA /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFDA1BEA627100C380AA /* Movie+CoreDataProperties.swift */; };
+		8FC2CFDD1BEA627100C380AA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFDB1BEA627100C380AA /* Movie.swift */; };
+		8FC2CFE31BEA696400C380AA /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFE21BEA696400C380AA /* AddMovieVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8FC2CFC91BEA5BB300C380AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FC2CFCC1BEA5BB300C380AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FC2CFCE1BEA5BB300C380AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC2CFD41BEA609700C380AA /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		8FC2CFDA1BEA627100C380AA /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8FC2CFDB1BEA627100C380AA /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
+		8FC2CFE21BEA696400C380AA /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		8FC2CFBE1BEA5BB300C380AA /* MyMovies */ = {
 			isa = PBXGroup;
 			children = (
+				8FC2CFE11BEA62DB00C380AA /* Controller */,
+				8FC2CFE01BEA62D400C380AA /* View */,
+				8FC2CFDE1BEA62C100C380AA /* Model */,
 				8FC2CFBF1BEA5BB300C380AA /* AppDelegate.swift */,
-				8FC2CFC11BEA5BB300C380AA /* ViewController.swift */,
 				8FC2CFC31BEA5BB300C380AA /* Main.storyboard */,
 				8FC2CFC91BEA5BB300C380AA /* Assets.xcassets */,
 				8FC2CFCB1BEA5BB300C380AA /* LaunchScreen.storyboard */,
@@ -65,6 +75,32 @@
 				8FC2CFC61BEA5BB300C380AA /* MyMovies.xcdatamodeld */,
 			);
 			path = MyMovies;
+			sourceTree = "<group>";
+		};
+		8FC2CFDE1BEA62C100C380AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FC2CFDA1BEA627100C380AA /* Movie+CoreDataProperties.swift */,
+				8FC2CFDB1BEA627100C380AA /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8FC2CFE01BEA62D400C380AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FC2CFD41BEA609700C380AA /* MovieCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8FC2CFE11BEA62DB00C380AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FC2CFC11BEA5BB300C380AA /* ViewController.swift */,
+				8FC2CFE21BEA696400C380AA /* AddMovieVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FC2CFC21BEA5BB300C380AA /* ViewController.swift in Sources */,
+				8FC2CFDC1BEA627100C380AA /* Movie+CoreDataProperties.swift in Sources */,
+				8FC2CFDD1BEA627100C380AA /* Movie.swift in Sources */,
 				8FC2CFC81BEA5BB300C380AA /* MyMovies.xcdatamodeld in Sources */,
+				8FC2CFE31BEA696400C380AA /* AddMovieVC.swift in Sources */,
+				8FC2CFD51BEA609700C380AA /* MovieCell.swift in Sources */,
 				8FC2CFC01BEA5BB300C380AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
