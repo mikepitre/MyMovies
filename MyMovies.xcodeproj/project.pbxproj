@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8FC2CFC01BEA5BB300C380AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFBF1BEA5BB300C380AA /* AppDelegate.swift */; };
 		8FC2CFC21BEA5BB300C380AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFC11BEA5BB300C380AA /* ViewController.swift */; };
-		8FC2CFC51BEA5BB300C380AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2CFC31BEA5BB300C380AA /* Main.storyboard */; };
 		8FC2CFC81BEA5BB300C380AA /* MyMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFC61BEA5BB300C380AA /* MyMovies.xcdatamodeld */; };
 		8FC2CFCA1BEA5BB300C380AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2CFC91BEA5BB300C380AA /* Assets.xcassets */; };
 		8FC2CFCD1BEA5BB300C380AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2CFCB1BEA5BB300C380AA /* LaunchScreen.storyboard */; };
@@ -17,13 +16,14 @@
 		8FC2CFDC1BEA627100C380AA /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFDA1BEA627100C380AA /* Movie+CoreDataProperties.swift */; };
 		8FC2CFDD1BEA627100C380AA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFDB1BEA627100C380AA /* Movie.swift */; };
 		8FC2CFE31BEA696400C380AA /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFE21BEA696400C380AA /* AddMovieVC.swift */; };
+		8FC2CFE51BEA7A2B00C380AA /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CFE41BEA7A2B00C380AA /* DetailVC.swift */; };
+		8FC2CFE71BEA7D0300C380AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2CFE61BEA7D0300C380AA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8FC2CFBC1BEA5BB300C380AA /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC2CFBF1BEA5BB300C380AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC2CFC11BEA5BB300C380AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8FC2CFC41BEA5BB300C380AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FC2CFC71BEA5BB300C380AA /* MyMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyMovies.xcdatamodel; sourceTree = "<group>"; };
 		8FC2CFC91BEA5BB300C380AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FC2CFCC1BEA5BB300C380AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +32,8 @@
 		8FC2CFDA1BEA627100C380AA /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8FC2CFDB1BEA627100C380AA /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
 		8FC2CFE21BEA696400C380AA /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
+		8FC2CFE41BEA7A2B00C380AA /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		8FC2CFE61BEA7D0300C380AA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,8 @@
 				8FC2CFE01BEA62D400C380AA /* View */,
 				8FC2CFE11BEA62DB00C380AA /* Controller */,
 				8FC2CFBF1BEA5BB300C380AA /* AppDelegate.swift */,
-				8FC2CFC31BEA5BB300C380AA /* Main.storyboard */,
 				8FC2CFC91BEA5BB300C380AA /* Assets.xcassets */,
+				8FC2CFE61BEA7D0300C380AA /* Main.storyboard */,
 				8FC2CFCB1BEA5BB300C380AA /* LaunchScreen.storyboard */,
 				8FC2CFCE1BEA5BB300C380AA /* Info.plist */,
 				8FC2CFC61BEA5BB300C380AA /* MyMovies.xcdatamodeld */,
@@ -99,6 +101,7 @@
 			children = (
 				8FC2CFC11BEA5BB300C380AA /* ViewController.swift */,
 				8FC2CFE21BEA696400C380AA /* AddMovieVC.swift */,
+				8FC2CFE41BEA7A2B00C380AA /* DetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -162,9 +165,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC2CFE71BEA7D0300C380AA /* Main.storyboard in Resources */,
 				8FC2CFCD1BEA5BB300C380AA /* LaunchScreen.storyboard in Resources */,
 				8FC2CFCA1BEA5BB300C380AA /* Assets.xcassets in Resources */,
-				8FC2CFC51BEA5BB300C380AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +183,7 @@
 				8FC2CFDD1BEA627100C380AA /* Movie.swift in Sources */,
 				8FC2CFC81BEA5BB300C380AA /* MyMovies.xcdatamodeld in Sources */,
 				8FC2CFE31BEA696400C380AA /* AddMovieVC.swift in Sources */,
+				8FC2CFE51BEA7A2B00C380AA /* DetailVC.swift in Sources */,
 				8FC2CFD51BEA609700C380AA /* MovieCell.swift in Sources */,
 				8FC2CFC01BEA5BB300C380AA /* AppDelegate.swift in Sources */,
 			);
@@ -188,14 +192,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8FC2CFC31BEA5BB300C380AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8FC2CFC41BEA5BB300C380AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8FC2CFCB1BEA5BB300C380AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

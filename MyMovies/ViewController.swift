@@ -60,6 +60,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return MovieCell()
         }
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var movie: Movie!
+        
+        movie = movies[indexPath.row]
+        performSegueWithIdentifier("DetailVC", sender: movie)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailVC" {
+            if let detailVC = segue.destinationViewController as? DetailVC {
+                if let movie = sender as? Movie {
+                    detailVC.movie = movie
+                }
+            }
+        }
+    }
 
 
 }
