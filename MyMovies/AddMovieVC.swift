@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -40,7 +41,30 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     }
 
     @IBAction func addToMoviesPressed(sender: AnyObject) {
-        
+        if let title = titleLbl.text where title != "" {
+            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            let entity = NSEntityDescription.entityForName("Movie", inManagedObjectContext: context)!
+            let movie = Movie(entity: entity, insertIntoManagedObjectContext: context)
+            
+            movie.title = title
+            movie.reason = reasonLbl.text
+            movie.plot = plotLbl.text
+            movie.imdb = imdbLbl.text
+            movie.setMovieImg(movieImg.image!)
+            
+            
+            context.insertObject(movie)
+            
+            do {
+                try context.save()
+            } catch {
+                print("Could not save movie.")
+            }
+            
+            self.navigationController?.popViewControllerAnimated(true)
+            
+        }
     }
    
 
