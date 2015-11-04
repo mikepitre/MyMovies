@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddMovieVC: UIViewController {
+class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var titleLbl: UITextField!
     @IBOutlet weak var reasonLbl: UITextField!
@@ -17,14 +17,30 @@ class AddMovieVC: UIViewController {
     @IBOutlet weak var movieImg: UIImageView!
     @IBOutlet weak var addImgBtn: UIButton!
     
+    var imagePicker: UIImagePickerController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         movieImg.clipsToBounds = true
         movieImg.layer.cornerRadius = 5.0
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        movieImg.image = image
+    }
+    
+    
+    @IBAction func addImgBtnPressed(sender: AnyObject) {
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
 
     @IBAction func addToMoviesPressed(sender: AnyObject) {
+        
     }
    
 

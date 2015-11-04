@@ -64,9 +64,9 @@
 		8FC2CFBE1BEA5BB300C380AA /* MyMovies */ = {
 			isa = PBXGroup;
 			children = (
-				8FC2CFE11BEA62DB00C380AA /* Controller */,
-				8FC2CFE01BEA62D400C380AA /* View */,
 				8FC2CFDE1BEA62C100C380AA /* Model */,
+				8FC2CFE01BEA62D400C380AA /* View */,
+				8FC2CFE11BEA62DB00C380AA /* Controller */,
 				8FC2CFBF1BEA5BB300C380AA /* AppDelegate.swift */,
 				8FC2CFC31BEA5BB300C380AA /* Main.storyboard */,
 				8FC2CFC91BEA5BB300C380AA /* Assets.xcassets */,
