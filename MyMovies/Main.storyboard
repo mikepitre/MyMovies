@@ -156,9 +156,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigstock-San-Diego-at-night-7216098" translatesAutoresizingMaskIntoConstraints="NO" id="STr-Fb-fA9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="STr-Fb-fA9">
                                 <rect key="frame" x="200" y="281" width="200" height="200"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.44705882349999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Kww-Bg-wzg"/>
                                     <constraint firstAttribute="width" constant="200" id="PMb-0U-HN6"/>
