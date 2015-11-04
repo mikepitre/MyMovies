@@ -21,12 +21,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
     
     override func viewDidAppear(animated: Bool) {
         fetchAndSetResults()
         tableView.reloadData()
     }
+    
     
     func fetchAndSetResults() {
         let app = UIApplication.sharedApplication().delegate as! AppDelegate
