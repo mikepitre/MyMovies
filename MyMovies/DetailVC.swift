@@ -42,5 +42,20 @@ class DetailVC: UIViewController {
         movieImg.layer.cornerRadius = 5.0
     }
     
+    @IBAction func imdbLinkPressed(sender: UIButton) {
+        
+        performSegueWithIdentifier("ImdbWebVC", sender: movie)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ImdbWebVC" {
+            if let imdbVC = segue.destinationViewController as? ImdbWebVC {
+                if let movie = sender as? Movie {
+                    imdbVC.movie = movie
+                }
+            }
+        }
+    }
+    
 
 }

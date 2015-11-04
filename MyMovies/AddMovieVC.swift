@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var titleLbl: UITextField!
     @IBOutlet weak var reasonLbl: UITextField!
@@ -66,6 +66,19 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
             
         }
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        titleLbl.resignFirstResponder()
+        reasonLbl.resignFirstResponder()
+        plotLbl.resignFirstResponder()
+        imdbLbl.resignFirstResponder()
+        return true
+    }
+    
    
 
 }
