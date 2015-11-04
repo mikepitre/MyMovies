@@ -16,7 +16,7 @@ class DetailVC: UIViewController {
     
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var movieImg: UIImageView!
-    @IBOutlet weak var imdbLbl: UILabel!
+    @IBOutlet weak var imdbBtn: UIButton!
     @IBOutlet weak var plotLbl: UILabel!
     @IBOutlet weak var reasonLbl: UILabel!
     
@@ -27,7 +27,13 @@ class DetailVC: UIViewController {
         
         titleLbl.text = movie.title
         movieImg.image = movie.getMovieImg()
-        imdbLbl.text = movie.imdb
+        
+        if let link = movie.imdb {
+            imdbBtn.setTitle("\(link)", forState: .Normal)
+        } else {
+            ""
+        }
+        
         plotLbl.text = movie.plot
         reasonLbl.text = movie.reason
         

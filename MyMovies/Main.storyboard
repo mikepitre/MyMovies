@@ -49,37 +49,30 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why I Like This Movie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="amc-JQ-sb4">
-                                                    <rect key="frame" x="109" y="37" width="483" height="35"/>
+                                                    <rect key="frame" x="109" y="37" width="483" height="64.5"/>
                                                     <animations/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="64.5" id="1bR-84-R63"/>
                                                         <constraint firstAttribute="height" constant="35" id="yqL-O5-Pj1"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDB Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4QJ-NA-Jtn">
-                                                    <rect key="frame" x="109" y="80" width="483" height="21"/>
-                                                    <animations/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="3Sm-p7-sXO"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="yqL-O5-Pj1"/>
+                                                        </mask>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstItem="UCf-hu-TmR" firstAttribute="top" secondItem="zuy-b1-uUv" secondAttribute="topMargin" id="3ga-wk-ykK"/>
-                                                <constraint firstItem="4QJ-NA-Jtn" firstAttribute="leading" secondItem="8QQ-DU-Kzv" secondAttribute="trailing" constant="7.5" id="8EC-uh-Rve"/>
                                                 <constraint firstItem="8QQ-DU-Kzv" firstAttribute="top" secondItem="zuy-b1-uUv" secondAttribute="topMargin" id="HnF-IB-fkn"/>
                                                 <constraint firstItem="amc-JQ-sb4" firstAttribute="trailing" secondItem="zuy-b1-uUv" secondAttribute="trailingMargin" id="IPo-7W-HEM"/>
                                                 <constraint firstItem="8QQ-DU-Kzv" firstAttribute="leading" secondItem="zuy-b1-uUv" secondAttribute="leadingMargin" id="SFT-pw-SIz"/>
                                                 <constraint firstItem="8QQ-DU-Kzv" firstAttribute="bottom" secondItem="zuy-b1-uUv" secondAttribute="bottomMargin" id="V5i-cD-oHR"/>
-                                                <constraint firstItem="4QJ-NA-Jtn" firstAttribute="top" secondItem="amc-JQ-sb4" secondAttribute="bottom" constant="8" id="fe5-6a-af2"/>
                                                 <constraint firstItem="amc-JQ-sb4" firstAttribute="leading" secondItem="8QQ-DU-Kzv" secondAttribute="trailing" constant="7.5" id="gBd-33-NbJ"/>
-                                                <constraint firstItem="4QJ-NA-Jtn" firstAttribute="trailing" secondItem="zuy-b1-uUv" secondAttribute="trailingMargin" id="kJy-g7-avt"/>
                                                 <constraint firstItem="UCf-hu-TmR" firstAttribute="trailing" secondItem="zuy-b1-uUv" secondAttribute="trailingMargin" id="m3k-cK-xo4"/>
                                                 <constraint firstItem="UCf-hu-TmR" firstAttribute="leading" secondItem="8QQ-DU-Kzv" secondAttribute="trailing" constant="7.5" id="qqh-zM-J3G"/>
                                                 <constraint firstItem="amc-JQ-sb4" firstAttribute="top" secondItem="UCf-hu-TmR" secondAttribute="bottom" constant="8" id="ycY-TO-xdU"/>
@@ -87,7 +80,6 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <outlet property="imdbLbl" destination="4QJ-NA-Jtn" id="ROR-Fy-1nC"/>
                                             <outlet property="movieImg" destination="8QQ-DU-Kzv" id="04X-pI-FhS"/>
                                             <outlet property="movieReasonLbl" destination="amc-JQ-sb4" id="mWM-Ou-Tah"/>
                                             <outlet property="movieTitleLbl" destination="UCf-hu-TmR" id="Gyt-8H-qH3"/>
@@ -316,17 +308,18 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-ce-upl">
-                                <rect key="frame" x="160" y="360" width="280" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMz-h3-e2a">
+                                <rect key="frame" x="160" y="360" width="280" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="Hky-BH-Ouh"/>
-                                    <constraint firstAttribute="height" constant="21" id="Lso-69-VEV"/>
+                                    <constraint firstAttribute="width" constant="280" id="dA2-Sj-oA5"/>
+                                    <constraint firstAttribute="height" constant="30" id="i9Z-DP-Jjb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.99607843139999996" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="imdblink.com">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -334,9 +327,9 @@
                             <constraint firstItem="R0C-AO-b8D" firstAttribute="leading" secondItem="o56-PT-Dd7" secondAttribute="leadingMargin" id="2bE-Jc-ZUg"/>
                             <constraint firstItem="R0C-AO-b8D" firstAttribute="trailing" secondItem="o56-PT-Dd7" secondAttribute="trailingMargin" id="2mW-0r-Pkg"/>
                             <constraint firstItem="2VY-uv-ui3" firstAttribute="leading" secondItem="o56-PT-Dd7" secondAttribute="leadingMargin" id="2r8-Hd-Q09"/>
-                            <constraint firstItem="VgQ-ce-upl" firstAttribute="top" secondItem="Ry2-eO-JA6" secondAttribute="bottom" constant="8" id="4tI-e1-Vpl"/>
                             <constraint firstItem="Ry2-eO-JA6" firstAttribute="top" secondItem="Njb-jY-WgL" secondAttribute="bottom" constant="8" id="EDh-73-8wn"/>
-                            <constraint firstItem="VgQ-ce-upl" firstAttribute="centerX" secondItem="o56-PT-Dd7" secondAttribute="centerX" id="LTX-Dr-u65"/>
+                            <constraint firstItem="WMz-h3-e2a" firstAttribute="top" secondItem="Ry2-eO-JA6" secondAttribute="bottom" constant="8" id="OcL-Yc-qi9"/>
+                            <constraint firstItem="WMz-h3-e2a" firstAttribute="centerX" secondItem="o56-PT-Dd7" secondAttribute="centerX" id="R0w-pO-8wW"/>
                             <constraint firstItem="2VY-uv-ui3" firstAttribute="top" secondItem="R0C-AO-b8D" secondAttribute="bottom" constant="8" id="owe-0s-aMc"/>
                             <constraint firstItem="2VY-uv-ui3" firstAttribute="trailing" secondItem="o56-PT-Dd7" secondAttribute="trailingMargin" id="rSk-C2-9Y4"/>
                             <constraint firstItem="Ry2-eO-JA6" firstAttribute="centerX" secondItem="o56-PT-Dd7" secondAttribute="centerX" id="zNl-rr-ahj"/>
@@ -360,7 +353,7 @@
                         </view>
                     </navigationItem>
                     <connections>
-                        <outlet property="imdbLbl" destination="VgQ-ce-upl" id="mGf-gk-k1I"/>
+                        <outlet property="imdbBtn" destination="WMz-h3-e2a" id="xbO-I4-q1B"/>
                         <outlet property="movieImg" destination="Ry2-eO-JA6" id="sm9-I4-eaf"/>
                         <outlet property="plotLbl" destination="R0C-AO-b8D" id="H4m-qv-5EH"/>
                         <outlet property="reasonLbl" destination="2VY-uv-ui3" id="e2l-vg-0ao"/>
@@ -382,21 +375,8 @@
                     <view key="view" contentMode="scaleToFill" id="x64-c9-ITg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NC2-xA-AIb">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="NC2-xA-AIb" secondAttribute="trailing" id="5VG-eJ-mKC"/>
-                            <constraint firstItem="Esu-s2-8M4" firstAttribute="top" secondItem="NC2-xA-AIb" secondAttribute="bottom" id="ZdU-2b-b0x"/>
-                            <constraint firstItem="NC2-xA-AIb" firstAttribute="leading" secondItem="x64-c9-ITg" secondAttribute="leading" id="waj-gH-mz0"/>
-                            <constraint firstItem="NC2-xA-AIb" firstAttribute="top" secondItem="U1X-a2-Anw" secondAttribute="bottom" id="yYV-CF-rcj"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t4e-QY-1A5">
                         <nil key="title"/>

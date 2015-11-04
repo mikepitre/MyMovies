@@ -32,7 +32,6 @@ class MovieCell: UITableViewCell {
     func configureCell(movie: Movie) {
         movieTitleLbl.text = movie.title
         movieReasonLbl.text = movie.reason
-        imdbLbl.text = movie.imdb
         movieImg.image = movie.getMovieImg()
     }
 
