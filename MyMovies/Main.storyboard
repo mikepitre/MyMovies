@@ -39,17 +39,23 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="UCf-hu-TmR">
-                                                    <rect key="frame" x="109" y="8" width="483" height="21"/>
+                                                    <rect key="frame" x="109" y="8" width="483" height="30"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="J8U-V1-Nd0"/>
+                                                        <constraint firstAttribute="height" constant="30" id="SVz-El-nhZ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="J8U-V1-Nd0"/>
+                                                        </mask>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why I Like This Movie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="amc-JQ-sb4">
-                                                    <rect key="frame" x="109" y="37" width="483" height="64.5"/>
+                                                    <rect key="frame" x="109" y="42" width="483" height="64.5"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="64.5" id="1bR-84-R63"/>
@@ -75,7 +81,7 @@
                                                 <constraint firstItem="amc-JQ-sb4" firstAttribute="leading" secondItem="8QQ-DU-Kzv" secondAttribute="trailing" constant="7.5" id="gBd-33-NbJ"/>
                                                 <constraint firstItem="UCf-hu-TmR" firstAttribute="trailing" secondItem="zuy-b1-uUv" secondAttribute="trailingMargin" id="m3k-cK-xo4"/>
                                                 <constraint firstItem="UCf-hu-TmR" firstAttribute="leading" secondItem="8QQ-DU-Kzv" secondAttribute="trailing" constant="7.5" id="qqh-zM-J3G"/>
-                                                <constraint firstItem="amc-JQ-sb4" firstAttribute="top" secondItem="UCf-hu-TmR" secondAttribute="bottom" constant="8" id="ycY-TO-xdU"/>
+                                                <constraint firstItem="amc-JQ-sb4" firstAttribute="top" secondItem="UCf-hu-TmR" secondAttribute="bottom" constant="4" id="ycY-TO-xdU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
@@ -154,7 +160,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="STr-Fb-fA9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinksquare" translatesAutoresizingMaskIntoConstraints="NO" id="STr-Fb-fA9">
                                 <rect key="frame" x="200" y="281" width="200" height="200"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.44705882349999998" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -438,9 +444,9 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="EDh-73-8wn"/>
-                                <exclude reference="OcL-Yc-qi9"/>
                                 <exclude reference="kJG-g5-cNI"/>
                                 <exclude reference="sEi-EF-YhX"/>
+                                <exclude reference="OcL-Yc-qi9"/>
                                 <exclude reference="Fbb-OA-7vO"/>
                                 <exclude reference="bcu-q5-1Co"/>
                                 <exclude reference="ev7-dQ-SN3"/>
@@ -576,5 +582,6 @@
     </scenes>
     <resources>
         <image name="bigstock-San-Diego-at-night-7216098" width="1600" height="1062"/>
+        <image name="pinksquare" width="499" height="416"/>
     </resources>
 </document>
